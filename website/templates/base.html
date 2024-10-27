@@ -14,15 +14,15 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-    <title>{% block title %}Home{% endblock %}</title>
+    <title>{% block title %}Home{% endblock %}</title><!-- default title, changing from page to page -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- Navbar code -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
             Toggle
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
-            <div class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbar"> 
+            <div class="navbar-nav"> <!-- Navbar quick access, ordered from left to right -->
                 <a class="nav-item nav-link" id="login" href="/login">Login</a>
                 <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
                 <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign-up</a>
@@ -30,10 +30,10 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container"><!-- block content, what is here is usable in other sections -->
         {% block content %}
         {% endblock %}
-    </div>
+    </div><!-- scripts made for the style of the page using cdn -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
